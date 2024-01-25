@@ -1,3 +1,4 @@
+const currentDate = new Date()
 let counter = 1
 const button = document.querySelector(".started");
 const main = document.querySelector("main");
@@ -12,6 +13,8 @@ const pages = document.getElementById("pages");
 const read = document.getElementById("read")
 const spanClarify = document.querySelector("#book-library .clarify");
 const deleteButton = document.querySelectorAll(".check-buttons .delete")
+const copyright = document.getElementById("copyright")
+copyright.innerHTML = `Copyright &copy; ${currentDate.getFullYear()} BodiAli.`
 button.addEventListener("click", function () {
   main.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
 });
