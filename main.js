@@ -35,11 +35,13 @@ document.addEventListener("click", function(ev){
 
 let myLibrary = [];
 
-function Book(title, author, pages, read){
+class Book{
+  constructor(title, author, pages, read){
   this.title = title;
   this.author = author;
   this.pages = pages;
   this.read = read
+ }
 }
 function addBookToLibrary(){
   let titleValue = title.value;
@@ -84,7 +86,7 @@ if(readValue){
 };
 counter++;
   bookLibrary.appendChild(newDiv);
-  const book = new Book(titleValue, authorValue, pagesValue, "read");
+  const book = new Book(titleValue, authorValue, pagesValue, readValue);
   myLibrary.push(book);
 
   
