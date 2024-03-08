@@ -176,6 +176,7 @@ button#add:active {
   background-color: rgb(182, 8, 8);
   border: none;
   border-radius: 10px;
+  cursor: pointer;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 .check-buttons .delete:hover {
